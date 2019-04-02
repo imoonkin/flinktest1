@@ -7,6 +7,7 @@ class testS1 {
   val socketStream = env.socketTextStream("localhost",9000)
   val wordsStream = socketStream.flatMap(value => value.split("\\s+")).map(value => (value,1))
 
+  // this is another branch
   val wordsStreamABC = wordsStream.map(value => (value._1+"ABC", value._2))
   val combinedStream = wordsStream.union(wordsStreamABC)
 

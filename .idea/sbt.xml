@@ -13,6 +13,7 @@
           </set>
         </option>
         <option name="resolveClassifiers" value="false" />
+        <option name="sbtVersion" value="1.2.8" />
       </SbtProjectSettings>
     </option>
     <option name="maximumHeapSize" value="2048" />

@@ -1,6 +1,6 @@
 package testPackage1
 
-import org.apache.flink.streaming.api.scala.DataStream
+import org.apache.flink.streaming.api.scala._
 
 class branchaggra(var flatStream:DataStream[String]){
   def flow: DataStream[(String, Int)]={

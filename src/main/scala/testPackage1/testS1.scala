@@ -18,7 +18,7 @@ object testS1 {
     val A1=w1.union(w2).keyBy(0).sum(1)
     val A2=A1.union(w3).keyBy(0).sum(1)
 
-    //val testStream=new testbranch(flatStream).flow
+    //val testStream=new testbranch(flatStream).flow  a
 
     A2.print()
 

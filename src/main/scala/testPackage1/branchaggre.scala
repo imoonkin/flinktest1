@@ -2,7 +2,7 @@ package testPackage1
 
 import org.apache.flink.streaming.api.scala._
 
-class branchaggra(var flatStream:DataStream[String]){
+class branchaggre(var flatStream:DataStream[String]){
   def flow: DataStream[(String, Int)]={
     val w1=flatStream.map(value => (value, 1)).startNewChain().keyBy(0).sum(1)
     val w2=flatStream.map(value => (value+"ABC", 1)).startNewChain().keyBy(0).sum(1)
